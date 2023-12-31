@@ -162,4 +162,3 @@ $$)
 ON CONFLICT (command)
     DO UPDATE SET
         schedule = EXCLUDED.schedule;
-
