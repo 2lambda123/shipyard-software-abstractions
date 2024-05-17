@@ -21,7 +21,7 @@ echo "Github User->"  $1
 echo "Branch name->" $2
 
 ### Add remote. If already added, expect an error "error: remote $1 already exists."
-git remote add $1 https://github.com/$1/abstractions
+git remote add -f $1 https://github.com/$1/abstractions
 ### Fetch remote
 git fetch $1
 ### Checkout developers remote branch and open a new branch with their username and todays date
